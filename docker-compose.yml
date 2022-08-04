@@ -4,7 +4,7 @@ services:
   nginx-exporter:
     image: quay.io/martinhelmich/prometheus-nginxlog-exporter:v1
     container_name: nginx-exporter
-    command: /mnt/nginxlogs/export.log -config-file /etc/exporter.hcl
+    command: -config-file /etc/exporter.hcl
     networks:
       - backend
     ports:
