@@ -11,7 +11,7 @@ services:
       - 4040:4040
     volumes:
       - nginx-logs:/mnt/nginxlogs
-      - ./nginx/exporter.hcl:/etc/exported.hcl
+      - ./nginx/exporter.hcl:/etc/exporter.hcl
     
   nginx:
     image: nginx:latest
